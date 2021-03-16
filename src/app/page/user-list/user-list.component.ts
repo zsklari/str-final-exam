@@ -21,4 +21,8 @@ export class UserListComponent implements OnInit {
     this.users$.subscribe();
   }
 
+  onDelete(user: User): void {
+    this.userService.remove(user)
+  }
+
 }

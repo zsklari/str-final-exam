@@ -10,7 +10,12 @@
         class="form-control"
         type="text"
         name="name"
-        [(ngModel)]="user.name">
+        [(ngModel)]="user.name"
+        pattern=".{8,40}"
+        required>
+        <div [hidden]="userForm.controls.name?.valid || userForm.controls.name?.pristine" class="error-message">
+          Min 8, max 40 characters
+        </div>
       </div>
       <div class="form-group">
         <label>Email</label>
@@ -20,7 +25,12 @@
           class="form-control"
           type="text"
           name="email"
-          [(ngModel)]="user.email">
+          [(ngModel)]="user.email"
+          [pattern]=""
+          required>
+          <div [hidden]="userForm.controls.email?.valid || userForm.controls.email?.pristine" class="error-message">
+            Enter a valid e-mail format
+          </div>
         </div>
         <div class="form-group">
           <label>Address</label>
@@ -29,7 +39,12 @@
           class="form-control"
           type="text"
           name="address"
-          [(ngModel)]="user.address">
+          [(ngModel)]="user.address"
+          pattern=".{8,100}"
+          required>
+          <div [hidden]="userForm.controls.address?.valid || userForm.controls.address?.pristine" class="message__error">
+            Min 8, max 100 characters
+          </div>
       </div>
       <div class="form-group">
         <label>Active</label>
