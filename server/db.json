@@ -1,5 +1,6 @@
 {
-  "users": [{"id":1,"name":"Scarface Ronaldson","email":"sronaldson0@uol.com.br","address":"62825 Towne Lane","active":false},
+  "users": [
+{"id":1,"name":"Scarface Ronaldson","email":"sronaldson0@uol.com.br","address":"62825 Towne Lane","active":false},
 {"id":2,"name":"Granville Taplin","email":"gtaplin1@vk.com","address":"274 Jenna Center","active":true},
 {"id":3,"name":"Marius Beddows","email":"mbeddows2@topsy.com","address":"5 Kennedy Drive","active":false},
 {"id":4,"name":"Brigitte Morland","email":"bmorland3@biblegateway.com","address":"4514 Milwaukee Parkway","active":true},
